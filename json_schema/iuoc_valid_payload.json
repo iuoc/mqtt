@@ -1,0 +1,17 @@
+{
+    "version": 1.0,
+    "name": "Valid payload example",
+    "cluster": "debug",
+    "location": "some where",
+    "data": [
+        {
+            "name" : "a string",
+            "type" : "string",
+            "value": "nice string"
+        },
+        {
+            "type" : "boolean",
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "IUOC payload",
+    "description": "IUOC payload",
+    "type": "object",
+    "properties": {
+        "version": {
+            "description": "Version of the payload schema",
+            "type": "integer"
+        },
+        "name": {
+            "description": "The name of the OC which published the message",
+            "type": "string"
+        },
+        "cluster": {
+            "description": "The name of the cluster to which the OC belongs",
+            "type": "string"
+        },
+        "location": {
+            "description": "The location of the OC which published the message",
+            "type": "string"
+        },
+        "data": {
+            "description": "The data present in the message",
+            "type": "array",
+            "minItems": 1,
+
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Name of the data",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "Name of the data",
+                        "type": "string",
+                        "enum": ["string", "float", "boolean", "integer"]
+                    },
+                    "value": {
+                        "description": "Data value"
+                    }
+                },
+                "required": ["type", "value"]
+            }
+        }
+    },
+    "required": ["name", "cluster", "location", "data"]
+}
