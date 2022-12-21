@@ -2,6 +2,8 @@
 `iuoc_payload.schema` is the definition of the *IUOC* payload message.
 These schema can be used for OCs payloads validation.
 
+* link: [JSON schema](https://json-schema.org/)
+
 # Example / test
 
 Two payload examples are provided:
