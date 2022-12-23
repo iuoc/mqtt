@@ -9,6 +9,7 @@ The current project are:
 
 * **hello_world**: *hello_world* mqtt example
 * **basic_iuoc**: Basic example of an IUOC
+* **json_schema**: IUOC mqtt payload JSON schema
 
 # Installation
 
@@ -26,3 +27,4 @@ or publish to a topic.
 
 * Subscribe: `$ mosquitto_sub -d -t testTopic`
 * Publish: ` $mosquitto_pub -d -t testTopic -m "Hello world!"`
+
